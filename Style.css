@@ -1,0 +1,123 @@
+﻿body {
+    background-color: rgb(220, 248, 255);
+}
+
+.jumbotron {
+    background-color: #ffff66;
+    padding: 10px;
+    font-weight: 700;
+    width: 855px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -4px;
+    border: 2px outset rgb(135, 222, 202);
+    box-shadow: 5px 5px 20px gray;
+}
+
+i#clip {
+    top: 5px;
+    position: absolute;
+    color: deeppink;
+}
+
+i#erase {
+    padding: 3px;
+    background-color: white;
+    border-radius: 50%;
+    border: 3px outset white;
+}
+
+img {
+    display: none;
+}
+
+i#erase:hover,
+#save i:hover,
+#option i:hover {
+    cursor: pointer;
+    border-style: inset;
+}
+
+h1 {
+    font-family: 'Niconne', cursive;
+}
+
+.selected {
+    border: 6px inset rgb(42, 147, 236) !important;
+}
+
+ul#colorpicker {
+    list-style: none;
+    display: inline-flex;
+    padding: 15px;
+    border-radius: 8px;
+    background-image: radial-gradient( rgb(234, 240, 240), rgb(225, 234, 145));
+    border: 3px inset rgb(207, 105, 105);
+    margin-top: -8px;
+    box-shadow: 5px 5px 40px gray;
+}
+
+    ul#colorpicker li {
+        height: 50px;
+        width: 50px;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+        border-radius: 20%;
+        border: 4px inset rgb(247, 239, 239);
+    }
+
+        ul#colorpicker li:hover {
+            cursor: pointer;
+        }
+
+canvas {
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border: 2px inset rgb(135, 222, 202);
+    box-shadow: 5px 5px 20px gray;
+}
+
+#canvas-center {
+    width: 100%;
+    text-align: center;
+}
+
+#save i,
+#option i {
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px outset rgb(221, 149, 240);
+    background-color: rgba(234, 114, 228, 0.98);
+    color: white;
+}
+
+#moreOption {
+    display:none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    border: 3px inset rgb(43, 226, 198);
+    margin-bottom: 10px;
+}
+
+@media (max-width: 990px) {
+    .jumbotron {
+        width: 500px;
+    }
+
+    ul#colorpicker li {
+        height: 30px;
+        width: 30px;
+        border: 2px inset rgb(247, 239, 239);
+    }
+
+    .selected {
+        border: 4px inset rgb(42, 147, 236) !important;
+    }
+}

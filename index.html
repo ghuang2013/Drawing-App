@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>I Draw</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Niconne|Rambla:700|Josefin Slab|Muli">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <!--content-->
+        <div class="jumbotron text-center">
+            <i class="fa fa-paperclip fa-5x fa-flip-horizontal" id="clip"></i>
+            <h1><span style="color: #8a2be2">Simple</span>
+                <span style="color: #40e0d0">Drawing</span>
+                <span style="color: #ff7373">Pad</span>
+            </h1>
+        </div>
+        <div id="canvas-center">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="row text-center">
+            <ul id="colorpicker">
+                <li id="#ffff00"></li>
+                <li id="#ff7373"></li>
+                <li id="#ff6666"></li>
+                <li id="#ee3a8c"></li>
+                <li id="#ffb6c1"></li>
+                <li id="#8a2be2"></li>
+                <li id="#990000" class="selected"></li>
+                <li id="#40e0d0"></li>
+                <li id="#088da5"></li>
+                <li id="#00ff7f"></li>
+                <i class="fa fa-eraser fa-3x" id="erase"></i>
+            </ul>
+        </div>
+        <div id="moreOption">
+            <label for="thickness">Thickness:</label>
+            <input type="range" name="thickness" id="thickness" value="5" min="0" max="50">
+        </div>
+        <div class="row text-center">
+            <a id="option">
+                <i class="fa fa-pencil-square-o fa-2x"> More Option</i>
+            </a>
+            <a id="save" download="YourFileName.jpg">
+                <i class="fa fa-floppy-o fa-2x"> Save</i>
+            </a>
+        </div>
+        <div style="height: 50px"></div>
+    </div>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.2.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
